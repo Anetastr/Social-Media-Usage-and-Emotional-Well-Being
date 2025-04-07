@@ -5,4 +5,3 @@ Data set bude rozdělen do 3 částí - na trénovací, testovací a validační
 Vstupní features budou age, gender, platform, daily_usage_time_spent, likes_received, comments_received, post_per_day a message_sent.
 Výstupní hodnota bude "The dominant emotional state of the user during the day (e.g., Happiness, Sadness, Anger, Anxiety, Boredom, Neutral)".
 
-Pro řešení bude použit SGD.
