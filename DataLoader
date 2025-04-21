@@ -29,7 +29,7 @@ class DataLoader:
         return self.data[:n]
 
 # Příklad cesty
-file_path = "/Users/anetastrnadova/Desktop/Archive/test.csv"
+file_path = "data/train.csv"
 
 # Vytvoř objekt
 loader = DataLoader(file_path)
