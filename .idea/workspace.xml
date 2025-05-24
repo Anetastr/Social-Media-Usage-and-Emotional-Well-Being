@@ -5,6 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="37aec783-42f9-4244-a58f-f13623ad5965" name="Changes" comment="zkouška">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/API.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/API2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/API3.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MLModel.py" beforeDir="false" afterPath="$PROJECT_DIR$/MLModel.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Test.py" beforeDir="false" afterPath="$PROJECT_DIR$/Test.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -46,6 +51,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Python tests.Python tests in Test.py.executor": "Run",
     "Python.API.executor": "Run",
     "Python.API2.executor": "Run",
     "Python.API3.executor": "Run",
@@ -106,7 +112,23 @@
       <option name="project" value="LOCAL" />
       <updated>1748094084842</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="zkouška">
+      <option name="closed" value="true" />
+      <created>1748094446467</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1748094446467</updated>
+    </task>
+    <task id="LOCAL-00006" summary="zkouška">
+      <option name="closed" value="true" />
+      <created>1748094476174</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1748094476174</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

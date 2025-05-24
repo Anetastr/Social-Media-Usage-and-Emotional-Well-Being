@@ -53,7 +53,7 @@ class DataFrameBuilder:
         self.data_loader = data_loader
 
     def to_dataframe(self):
-        """Převede načtená data na pandas DataFrame"""
+
         return pd.DataFrame(self.data_loader.data, columns=self.data_loader.header)
 
     def to_clean_dataframe(self):
@@ -65,7 +65,6 @@ class DataFrameBuilder:
 # Cesta k datum
 file_path = "/Users/anetastrnadova/Desktop/archive/train.csv"
 
-# Objekt
 loader = DataLoader(file_path)
 df_builder = DataFrameBuilder(loader)
 df_raw = df_builder.to_dataframe()
@@ -83,7 +82,6 @@ temp_gender = df_cleaned.loc[1505:1579, 'Gender'].copy()
 df_cleaned.loc[1505:1579, 'Age'] = temp_gender
 df_cleaned.loc[1505:1579, 'Gender'] = temp_age
 
-# Výstupy
 print("Shape:", loader.shape())
 print("Názvy sloupců:", loader.columns())
 print("Prvních 5 řádků:")
@@ -99,9 +97,8 @@ def sigmoid(x):
 
 def train_neuron(X, y, mu=0.01, epochs=1000, test_size=0.2, val_size=0.1, random_state=42, patience=20, plot=True):
     # --- Rozdělení dat ---
-    # Nejprve na train + temp (test + val)
     X_train, X_temp, y_train, y_temp = train_test_split(X, y, test_size=test_size + val_size, random_state=random_state)
-    # Poté z temp udělej val a test
+
     val_ratio = val_size / (test_size + val_size)
     X_val, X_test, y_val, y_test = train_test_split(X_temp, y_temp, test_size=1 - val_ratio, random_state=random_state)
 
@@ -204,7 +201,7 @@ weights = pd.Series(result['weights'], index=X.columns)
 print("Váhy s názvy vstupních proměnných:")
 print(weights)
 
-# Bias zvlášť
+# Bias
 print("\nBias (b):", result['bias'])
 
 import requests
@@ -212,7 +209,6 @@ import pandas as pd
 
 API_KEY = "de882d30"
 
-# Inline schéma v URL
 url = (
     f"https://api.mockaroo.com/api/generate.json?key={API_KEY}&count=100"
     "&fields=["
@@ -259,14 +255,13 @@ y_pred_new = np.where(y_activation >= 0.5, 1, 0)
 y = pd.Series(y)
 y_pred_new = pd.Series(y_pred_new)
 
-# Spočítáme četnosti
 counts_y = y.value_counts().sort_index()
 counts_y.index = ['Negativní emoce', 'Pozitivní emoce']
 
 counts_pred = y_pred_new.value_counts().sort_index()
 counts_pred.index = ['Negativní emoce', 'Pozitivní emoce']
 
-# Vykreslíme vedle sebe
+
 fig, axs = plt.subplots(1, 2, figsize=(10, 5))
 
 # První koláč – skutečné hodnoty

@@ -4,7 +4,7 @@ from sklearn.datasets import make_classification
 from MLModel import train_neuron
 
 def test_train_neuron_basic():
-    # Generuj malý binární dataset
+    # binární dataset
     X, y = make_classification(n_samples=100, n_features=5, random_state=42)
     X = pd.DataFrame(X)
     y = pd.Series(y)
