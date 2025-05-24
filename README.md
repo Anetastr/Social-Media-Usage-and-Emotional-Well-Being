@@ -9,6 +9,12 @@ zdroj: https://doi.org/10.34740/kaggle/dsv/8460631
 
 ## Prediktor emocionálního stavu na základě chování na sociálních sítích
 
+Ke spuštění projektu jsou potřeba soubory:
+
+```
+MLModel.py, Test.py, train.csv
+```
+
 Tento projekt načítá a předzpracovává data o uživatelích sociálních sítí, trénuje Adaptive liner neuron pro klasifikaci emocionálního stavu (pozitivní - 1 vs. negativní - 0) a vyhodnocuje výsledky pomocí metrik a grafů.
 
 ## Funkcionalita
